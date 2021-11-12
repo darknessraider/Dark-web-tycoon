@@ -1,0 +1,72 @@
+<!--
+Dark Web Tycoon started 11/9/21
+credits:
+Woody Spivey: creator and a coder
+GJ: coder
+-->
+
+<title id="titlebalanceDisplay"></span></title>
+<link rel = "icon" href = "https://s2.coinmarketcap.com/static/img/coins/200x200/1.png" type = "image/x-icon">
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+<links>
+<br>
+<a href="patchnotes.html" target="_blank">Patch Notes</a><br>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdVO9gJyc-CKnNAtEVkPRuR3DOm5Yz7dTQBNd9LckQtUsFNBw/viewform?usp=sf_link" target="_blank">Complaint and Sugestion Form</a><br>
+<a href="https://discord.gg/Guvb8q6K" target="_blank">Discord Server<a><br>
+<a>Press Ctr-Shift-R on chromebooks to recive any updates.</a>
+</links>
+
+<balance>
+  $<span id="balanceDisplay"></span><br>
+</balance>
+
+<persecond>
+  <span id="perSecondDisplay"></span>$ per second
+</persecond>
+
+<bitcoin>
+  <button type="button" onclick="bitcoinClick()"><img src="BitcoinImage.png"/></button><br>
+</bitcoin>
+
+<factorys>
+  <span id="bitCoinUpgradeNumber"></span>
+
+  <span data-text="Each bitcoin upgrade gives you 1 bitcoin per click" class="tooltip"><button type="button" onclick="upgradeBitcoin();">Upgrade Bitcoin $<span id="bitCoinUpgradeCost"></span></button><span id="bitCoinProfit"></span></span><br>
+
+  <span id="gunFactories"></span>
+
+  <span data-text="Each gun factory gives you 1 bitcoin persecond" class="tooltip"><button type="button" onclick="upgradeGunFactory();">Buy Gun Factory $<span id="gunFactoryCost"></span></button><span id="gunFactoryProfit"></span></span><br>
+
+  <span id="bombFactories"></span>
+  
+  <span data-text="Each bomb factory gives you 5 bitcoin per second" class="tooltipbomb"><button type="button" onclick="upgradeBombFactory();">Buy Bomb Factory $<span id="bombFactoryCost"></span></button><span id="bombFactoryProfit"></span></span><br>
+	<!--sooooo what's it like having nothing better to do that read the source code for a game that looks quite shady-->
+  <span id="humanLeatherFactories"></span>
+
+  <span data-text="Each human leather factory gives you 20 bitcoin persecond" class="tooltip"><button type="button" onclick="upgradeHumanLeatherFactory();">Buy Human Leather Factory $<span id="humanLeatherFactoryCost"></span></button><span id="humanLeatherFactoryProfit"></span></span><br>
+
+  <span id="marihuanaFactories"></span>
+
+  <span data-text="Each marihuana factory gives you 50 bitcoin persecond" class="tooltip"><button type="button" onclick="upgradeMarihuanaFactory();">Buy Marihuana Factory $<span id="marihuanaFactoryCost"></span></button><span id="marihuanaFactoryProfit"></span></span><br>
+
+  <span id="cocainFactories"></span>
+
+  <span data-text="Each cocain factory gives you 1000 bitcoin persecond" class="tooltip"><button type="button" onclick="upgradeCocainFactory();">Buy Cocain Factory $<span id="cocainFactoryCost"></span></button><span id="cocainFactoryProfit"></span></span><br>
+</factorys>
+
+<span class="save"><button onclick="save();">Save</button><button onclick="load()">Load</button></span>
+
+<!--
+<upgradestore>
+  <span data-text="One click gives twice the bitcoin! Cost: $1000" class="tooltipright" id="doubleClickUpgrade">
+    <button onclick="doubleClickUpgrade();">Double click</button>
+  </span>
+</upgradestore>
+-->
+
+<!--comented out because it causes a dangerous glitch that I don't feel like fixing -->
+
+<script src="script.js"></script>
+
