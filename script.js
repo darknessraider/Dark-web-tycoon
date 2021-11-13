@@ -113,6 +113,11 @@ function idleBalanceIncrease () {
   setTimeout(idleBalanceIncrease, 1000);
 }
 
+function autoSave (){
+  save()
+  setTimeout(autoSave, 60000)
+}
+
 //this is from the upgrade store on the right and is disabled right now because it causes a glitch with saving and loading 
 function doubleClickUpgrade () {
   if (balance >= 1000) {
@@ -202,6 +207,7 @@ function save() {
     setCookie("cocainFactoryIncrease", cocainFactoryIncrease);
     
 }
+
 
 
 
