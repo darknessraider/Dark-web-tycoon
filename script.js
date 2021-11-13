@@ -253,13 +253,13 @@ function refreshDisplay() {
 }
 
 //this was an idea
-/*
-if (getCookie("balance") == null){
+
+if (document.cookie = ""){
   save()
 }else{
   load()
 }
-*/
+
 
 //these start the repeating functions
 refreshDisplay();
