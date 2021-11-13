@@ -2,6 +2,7 @@
 
 //all variables
 var balance = 0;
+var autoSave = "off";
 var bitCoinUpgradeNumber = 1;
 var bitCoinUpgradeCost = 50;
 var bitcoinProfit = 1;
@@ -113,9 +114,11 @@ function idleBalanceIncrease () {
   setTimeout(idleBalanceIncrease, 1000);
 }
 
-function autoSave (){
-  save()
-  setTimeout(autoSave, 60000)
+function autoSaveLoop (){
+  if (autoSave == "on"){
+    save()
+  } 
+  setTimeout(autoSaveLoop, 60000)
 }
 
 //this is from the upgrade store on the right and is disabled right now because it causes a glitch with saving and loading 
@@ -137,7 +140,7 @@ function setCookie(cName, cValue) {
 }
 
 //this is also code I stole but this time to get cookies
-function getCookie(cName) {
+function getCookie(cName, noParse) {
       const name = cName + "=";
       const cDecoded = decodeURIComponent(document.cookie); //to be careful
       const cArr = cDecoded .split('; ');
@@ -145,7 +148,10 @@ function getCookie(cName) {
       cArr.forEach(val => {
           if (val.indexOf(name) === 0) res = val.substring(name.length);
       })
-      return parseInt(res);
+      if (noParse){
+        return res;
+      }
+      return parseInt(res)
 }
 
 
@@ -176,6 +182,7 @@ function load() {
   cocainFactoryCost = getCookie ("cocainFactoryCost");
   cocainFactoryProfit = getCookie ("cocainFactoryProfit");
   cocainFactoryIncrease = getCookie ("cocainFactoryIncrease");
+  autoSave = getCookie("autoSave");
 }
 
 //this saves all the variables into cookies
@@ -205,6 +212,7 @@ function save() {
     setCookie("cocainFactoryCost", cocainFactoryCost);
     setCookie("cocainFactoryProfit", cocainFactoryProfit);
     setCookie("cocainFactoryIncrease", cocainFactoryIncrease);
+    setCookie("autoSave", autoSave);
     
 }
 
@@ -260,7 +268,7 @@ function refreshDisplay() {
 
 //this was an idea
 
-if (document.cookie = ""){
+if (document.cookie == ""){
   save()
 }else{
   load()
