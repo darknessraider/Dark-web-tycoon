@@ -27,21 +27,27 @@ GJ: coder
 </persecond>
 
 <bitcoin>
-  <button type="button" onclick="bitcoinClick()"><img src="BitcoinImage.png"/></button><br>
+  <button type="button" onclick="bitcoinClick()"><img src="Images/BitcoinImage.png"/></button><br>
 </bitcoin>
 
 <factorys>
   <span id="bitCoinUpgradeNumber"></span>
 
-  <span data-text="Each bitcoin upgrade gives you 1 bitcoin per click" class="tooltip"><button type="button" onclick="upgradeBitcoin();">Upgrade Bitcoin $<span id="bitCoinUpgradeCost"></span></button><span id="bitCoinProfit"></span></span><br>
+  <span data-text="Each bitcoin upgrade gives you 1 bitcoin per click" class="tooltip">
+  <button style="background-image: url(Images/bitcoin-factory-image.jpg); background-size: cover; padding: 15px 15px; color: white;" type="button" onclick="upgradeBitcoin();">Upgrade Bitcoin $<span id="bitCoinUpgradeCost"></span></button>
+  <span id="bitCoinProfit"></span></span><br>
 
   <span id="gunFactories"></span>
 
-  <span data-text="Each gun factory gives you 1 bitcoin persecond" class="tooltip"><button type="button" onclick="upgradeGunFactory();">Buy Gun Factory $<span id="gunFactoryCost"></span></button><span id="gunFactoryProfit"></span></span><br>
+  <span data-text="Each gun factory gives you 1 bitcoin persecond" class="tooltip">
+  <button style="background-image: url(Images/gun-factroy-image.jfif); background-size: cover; padding: 15px 15px; color: white;" type="button" onclick="upgradeGunFactory();">Buy Gun Factory $<span id="gunFactoryCost"></span></button>
+  <span id="gunFactoryProfit"></span></span><br>
 
   <span id="bombFactories"></span>
   
-  <span data-text="Each bomb factory gives you 5 bitcoin per second" class="tooltipbomb"><button type="button" onclick="upgradeBombFactory();">Buy Bomb Factory $<span id="bombFactoryCost"></span></button><span id="bombFactoryProfit"></span></span><br>
+  <span data-text="Each bomb factory gives you 5 bitcoin per second" class="tooltipbomb">
+  <button style="background-image: url(Images/bomb-factory-image.jfif); background-size: cover; padding: 15px 15px; color: white" type="button" onclick="upgradeBombFactory();">Buy Bomb Factory $<span id="bombFactoryCost"></span></button>
+  <span id="bombFactoryProfit"></span></span><br>
 	<!--sooooo what's it like having nothing better to do that read the source code for a game that looks quite shady-->
   <span id="humanLeatherFactories"></span>
 
