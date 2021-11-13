@@ -118,8 +118,10 @@ function idleBalanceIncrease () {
 function autoSaveToggle (){
   if (autoSave == "on"){
     autoSave = "off"
+    document.getElementById("autoSaveToggle").style.backgroundColor = "red";
   }else{
     autoSave = "on"
+    document.getElementById("autoSaveToggle").style.backgroundColor = "green";
   }
   
 }
@@ -128,7 +130,7 @@ function autoSaveLoop (){
   if (autoSave == "on"){
     save()
   } 
-  setTimeout(autoSaveLoop, 60000)
+  setTimeout(autoSaveLoop, 10000)
 }
 
 
@@ -194,7 +196,7 @@ function load() {
   cocainFactoryCost = getCookie ("cocainFactoryCost");
   cocainFactoryProfit = getCookie ("cocainFactoryProfit");
   cocainFactoryIncrease = getCookie ("cocainFactoryIncrease");
-  autoSave = getCookie("autoSave");
+  autoSave = getCookie("autoSave", true);
 }
 
 //this saves all the variables into cookies
@@ -290,4 +292,14 @@ if (document.cookie == ""){
 //these start the repeating functions
 refreshDisplay();
 idleBalanceIncrease();
+autoSaveLoop();
+
+//checks the auto save cookie to change the color of the button 
+if (autoSave == "off"){
+  document.getElementById("autoSaveToggle").style.backgroundColor = "red";
+}else if(autoSave == "on"){
+  document.getElementById("autoSaveToggle").style.backgroundColor = "green";
+}else{
+  document.getElementById("autoSaveToggle").style.backgroundColor = "red";
+}
 
