@@ -114,12 +114,24 @@ function idleBalanceIncrease () {
   setTimeout(idleBalanceIncrease, 1000);
 }
 
+
+function autoSaveToggle (){
+  if (autoSave == "on"){
+    autoSave = "off"
+  }else{
+    autoSave = "on"
+  }
+  
+}
+
 function autoSaveLoop (){
   if (autoSave == "on"){
     save()
   } 
   setTimeout(autoSaveLoop, 60000)
 }
+
+
 
 //this is from the upgrade store on the right and is disabled right now because it causes a glitch with saving and loading 
 function doubleClickUpgrade () {

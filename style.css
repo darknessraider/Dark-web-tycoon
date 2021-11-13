@@ -121,12 +121,18 @@ upgradestore{
   left: 1240px;
 }
 
-/*this is the save and load buttons */
+/*this is the save button */
 .save{
   position: absolute;
   top: 10px;
   left: 650px;
 }
+.autoSaveToggle{
+  position: absolute;
+  top: 10px;
+  left: 700px;
+}
+
 /*this is the display that tells you how many bitcoins you get persecond*/
 persecond{
   position: absolute;
