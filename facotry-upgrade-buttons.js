@@ -1,3 +1,20 @@
+document.getElementById("changeSell").style.backgroundColor = "gray";
+document.getElementById("changeBuy").style.backgroundColor = "white";
+
+
+
+function changeSell() {
+  document.getElementById("changeBuy").style.backgroundColor = "gray";
+  document.getElementById("changeSell").style.backgroundColor = "white";
+}
+
+
+function changeBuy() {
+  document.getElementById("changeSell").style.backgroundColor = "gray";
+  document.getElementById("changeBuy").style.backgroundColor = "white";
+}
+
+
 //Runs when you click Upgrade bitcoin
 function upgradeBitcoin () {
     if (balance >= bitCoinUpgradeCost) {
