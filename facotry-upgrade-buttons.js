@@ -65,3 +65,13 @@ function upgradeBitcoin () {
       cocaineFactoryCost = parseInt(cocaineFactoryCost);
     }
   }
+
+  function upgradeNukeFactory () {
+    if (balance >= nukeFactoryCost) {
+      balance = balance - nukeFactoryCost;
+      nukeFactories += 1;
+      nukeFactoryCost += nukeFactoryCost/10;
+      nukeFactoryProfit += nukeFactoryIncrease;
+      nukeFactoryCost = parseInt(nukeFactoryCost);
+    }
+  }

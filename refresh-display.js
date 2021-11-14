@@ -40,6 +40,12 @@ function refreshDisplay() {
   
     document.getElementById("cocaineFactoryProfit").innerHTML = cocaineFactoryProfit;
     
+    document.getElementById("nukeFactoryProfit").innerHTML = nukeFactoryProfit;
+
+    document.getElementById("nukeFactoryCost").innerHTML = nukeFactoryCost;
+
+    document.getElementById("nukeFactories").innerHTML = nukeFactories;
+
     document.getElementById("perSecondDisplay").innerHTML = totalBitCoinPerSecond
   
     setTimeout(refreshDisplay, 10);
