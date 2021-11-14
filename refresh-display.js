@@ -28,17 +28,17 @@ function refreshDisplay() {
   
     document.getElementById("humanLeatherFactoryProfit").innerHTML = humanLeatherFactoryProfit;
   
-    document.getElementById("marihuanaFactories").innerHTML = marihuanaFactories;
+    document.getElementById("marijuanaFactories").innerHTML = marijuanaFactories;
   
-    document.getElementById("marihuanaFactoryCost").innerHTML = marihuanaFactoryCost;
+    document.getElementById("marijuanaFactoryCost").innerHTML = marijuanaFactoryCost;
   
-    document.getElementById("marihuanaFactoryProfit").innerHTML = marihuanaFactoryProfit;
+    document.getElementById("marijuanaFactoryProfit").innerHTML = marijuanaFactoryProfit;
   
-    document.getElementById("cocainFactories").innerHTML = cocainFactories;
+    document.getElementById("cocaineFactories").innerHTML = cocaineFactories;
   
-    document.getElementById("cocainFactoryCost").innerHTML = cocainFactoryCost;
+    document.getElementById("cocaineFactoryCost").innerHTML = cocaineFactoryCost;
   
-    document.getElementById("cocainFactoryProfit").innerHTML = cocainFactoryProfit;
+    document.getElementById("cocaineFactoryProfit").innerHTML = cocaineFactoryProfit;
     
     document.getElementById("perSecondDisplay").innerHTML = totalBitCoinPerSecond
   

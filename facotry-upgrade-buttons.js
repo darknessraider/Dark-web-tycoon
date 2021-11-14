@@ -45,23 +45,23 @@ function upgradeBitcoin () {
   }
   
   
-  function upgradeMarihuanaFactory () {
-    if (balance >= marihuanaFactoryCost) {
-      balance = balance - marihuanaFactoryCost;
-      marihuanaFactories += 1;
-      marihuanaFactoryCost += marihuanaFactoryCost/10;
-      marihuanaFactoryProfit += marihuanaFactoryIncrease;
-      marihuanaFactoryCost = parseInt(marihuanaFactoryCost);
+  function upgrademarijuanaFactory () {
+    if (balance >= marijuanaFactoryCost) {
+      balance = balance - marijuanaFactoryCost;
+      marijuanaFactories += 1;
+      marijuanaFactoryCost += marijuanaFactoryCost/10;
+      marijuanaFactoryProfit += marijuanaFactoryIncrease;
+      marijuanaFactoryCost = parseInt(marijuanaFactoryCost);
     }
   }
   
   
-  function upgradeCocainFactory () {
-    if (balance >=  cocainFactoryCost) {
-      balance = balance - cocainFactoryCost;
-      cocainFactories += 1;
-      cocainFactoryCost += cocainFactoryCost/10;
-      cocainFactoryProfit += cocainFactoryIncrease;
-      cocainFactoryCost = parseInt(cocainFactoryCost);
+  function upgradeCocaineFactory () {
+    if (balance >=  cocaineFactoryCost) {
+      balance = balance - cocaineFactoryCost;
+      cocaineFactories += 1;
+      cocaineFactoryCost += cocaineFactoryCost/10;
+      cocaineFactoryProfit += cocaineFactoryIncrease;
+      cocaineFactoryCost = parseInt(cocaineFactoryCost);
     }
   }

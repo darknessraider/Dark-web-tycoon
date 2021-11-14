@@ -22,14 +22,14 @@ var humanLeatherFactories = 0;
 var humanLeatherFactoryCost = 5000;
 var humanLeatherFactoryProfit = 0;
 var humanLeatherFactoryIncrease = 20;
-var marihuanaFactories = 0;
-var marihuanaFactoryCost = 10000;
-var marihuanaFactoryProfit = 0;
-var marihuanaFactoryIncrease = 50
-var cocainFactories = 0;
-var cocainFactoryCost = 50000;
-var cocainFactoryProfit = 0;
-var cocainFactoryIncrease = 1000;
+var marijuanaFactories = 0;
+var marijuanaFactoryCost = 10000;
+var marijuanaFactoryProfit = 0;
+var marijuanaFactoryIncrease = 50
+var cocaineFactories = 0;
+var cocaineFactoryCost = 50000;
+var cocaineFactoryProfit = 0;
+var cocaineFactoryIncrease = 1000;
 
 
 //Display All Numbers 
@@ -42,7 +42,7 @@ function bitcoinClick () {
  
 //runs every second and adds up the total profit 
 function idleBalanceIncrease () {
-  totalBitCoinPerSecond = gunFactoryProfit + bombFactoryProfit + humanLeatherFactoryProfit + marihuanaFactoryProfit + cocainFactoryProfit;
+  totalBitCoinPerSecond = gunFactoryProfit + bombFactoryProfit + humanLeatherFactoryProfit + marijuanaFactoryProfit + cocaineFactoryProfit;
   balance += totalBitCoinPerSecond
   //cool thing that loop the function every second
   setTimeout(idleBalanceIncrease, 1000);

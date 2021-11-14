@@ -41,14 +41,14 @@ humanLeatherFactories = getCookie ("humanLeatherFactories");
 humanLeatherFactoryCost = getCookie ("humanLeatherFactoryCost");
 humanLeatherFactoryProfit = getCookie ("humanLeatherFactoryProfit");
 humanLeatherFactoryIncrease = getCookie("humanLeatherFactoryIncrease");
-marihuanaFactories = getCookie ("marihuanaFactories");
-marihuanaFactoryCost = getCookie ("marihuanaFactoryCost");
-marihuanaFactoryProfit = getCookie ("marihuanaFactoryProfit");
-marihuanaFactoryIncrease = getCookie ("marihuanaFactoryIncrease");
-cocainFactories = getCookie ("cocainFactories");
-cocainFactoryCost = getCookie ("cocainFactoryCost");
-cocainFactoryProfit = getCookie ("cocainFactoryProfit");
-cocainFactoryIncrease = getCookie ("cocainFactoryIncrease");
+marijuanaFactories = getCookie ("marijuanaFactories");
+marijuanaFactoryCost = getCookie ("marijuanaFactoryCost");
+marijuanaFactoryProfit = getCookie ("marijuanaFactoryProfit");
+marijuanaFactoryIncrease = getCookie ("marijuanaFactoryIncrease");
+cocaineFactories = getCookie ("cocainFactories");
+cocaineFactoryCost = getCookie ("cocaineFactoryCost");
+cocaineFactoryProfit = getCookie ("cocaineFactoryProfit");
+cocaineFactoryIncrease = getCookie ("cocaineFactoryIncrease");
 autoSave = getCookie("autoSave", true);
 }
 
@@ -71,14 +71,14 @@ setCookie("humanLeatherFactories", humanLeatherFactories);
 setCookie("humanLeatherFactoryCost", humanLeatherFactoryCost);
 setCookie("humanLeatherFactoryProfit", humanLeatherFactoryProfit);
 setCookie("humanLeatherFactoryIncrease", humanLeatherFactoryIncrease);
-setCookie("marihuanaFactories", marihuanaFactories);
-setCookie("marihuanaFactoryCost", marihuanaFactoryCost);
-setCookie("marihuanaFactoryProfit", marihuanaFactoryProfit);
-setCookie("marihuanaFactoryIncrease", marihuanaFactoryIncrease);
-setCookie("cocainFactories", cocainFactories);
-setCookie("cocainFactoryCost", cocainFactoryCost);
-setCookie("cocainFactoryProfit", cocainFactoryProfit);
-setCookie("cocainFactoryIncrease", cocainFactoryIncrease);
+setCookie("marijuanaFactories", marijuanaFactories);
+setCookie("marijuanaFactoryCost", marijuanaFactoryCost);
+setCookie("marijuanaFactoryProfit", marijuanaFactoryProfit);
+setCookie("marijuanaFactoryIncrease", marijuanaFactoryIncrease);
+setCookie("cocainFactories", cocaineFactories);
+setCookie("cocaineFactoryCost", cocaineFactoryCost);
+setCookie("cocaineFactoryProfit", cocaineFactoryProfit);
+setCookie("cocaineFactoryIncrease", cocaineFactoryIncrease);
 setCookie("autoSave", autoSave);
 
 }
