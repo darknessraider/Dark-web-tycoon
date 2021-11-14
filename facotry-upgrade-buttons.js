@@ -6,24 +6,28 @@ document.getElementById("changeBuy").style.backgroundColor = "white";
 function changeSell() {
   document.getElementById("changeBuy").style.backgroundColor = "gray";
   document.getElementById("changeSell").style.backgroundColor = "white";
+  buyActive = "off"
 }
 
 
 function changeBuy() {
   document.getElementById("changeSell").style.backgroundColor = "gray";
   document.getElementById("changeBuy").style.backgroundColor = "white";
+  buyActive = "on"
 }
+
+
 
 
 //Runs when you click Upgrade bitcoin
 function upgradeBitcoin () {
     if (balance >= bitCoinUpgradeCost) {
-    balance = balance - bitCoinUpgradeCost;
-    bitCoinUpgradeNumber += 1;
-    bitCoinUpgradeCost += bitCoinUpgradeCost/10;
-    bitcoinProfit += bitcoinIcrease;
-    bitCoinUpgradeCost = parseInt(bitCoinUpgradeCost);
-  
+      balance = balance - bitCoinUpgradeCost;
+      bitCoinUpgradeNumber += 1;
+      bitCoinUpgradeCost += bitCoinUpgradeCost/10;
+      bitcoinProfit += bitcoinIcrease;
+      bitCoinUpgradeCost = parseInt(bitCoinUpgradeCost);
+    
     }
   }
   

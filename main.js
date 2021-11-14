@@ -5,6 +5,7 @@
 //all variables
 var balance = 0;
 var autoSave = "off";
+var buyActive = "on";
 var bitCoinUpgradeNumber = 1;
 var bitCoinUpgradeCost = 50;
 var bitcoinProfit = 1;
