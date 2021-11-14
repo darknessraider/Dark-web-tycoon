@@ -27,7 +27,7 @@ function upgradeBitcoin () {
     if (balance >= bombFactoryCost) {
       balance = balance - bombFactoryCost;
       bombFactories += 1;
-      bombFactoryCost += bitCoinUpgradeCost/10;
+      bombFactoryCost += bombFactoryCost/10;
       bombFactoryProfit += bombFactoryIncrease;
       bombFactoryCost = parseInt(bombFactoryCost);
     }
