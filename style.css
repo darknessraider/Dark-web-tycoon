@@ -20,12 +20,17 @@ balance {
   left: 550px;
 }
 
+.importexport{
+  position: relative;
+  top: -56px;
+  left: 1000px;
+}
 
 /*this positons the upgrade store */
 upgradestore{
   position: absolute;
   top: 25px;
-  left: 1240px;
+  left: 750px;
 }
 
 /*this is the save button */
@@ -52,4 +57,3 @@ links{
   top: 620px;
   left: 250px;
 }
-
