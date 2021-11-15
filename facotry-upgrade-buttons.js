@@ -53,7 +53,13 @@ function upgradeBitcoin () {
   
   //runs when you click upgrade gun factory I think you can figure out what the rest of these do
   function upgradeGunFactory () {
-    if (balance >= gunFactoryCost) {
+    if ((buyActive == "off") && !(gunFactories == 0)){
+      gunFactoryValues = sell(gunFactories, gunFactoryCost, gunFactoryProfit, gunFactoryIncrease);
+      gunFactories = gunFactoryValues[0];
+      gunFactoryCost = gunFactoryValues[1];
+      gunFactoryProfit = gunFactoryValues[2];
+    }
+    if (balance >= gunFactoryCost && buyActive == "on") {
       balance = balance - gunFactoryCost;
       gunFactories += 1;
       gunFactoryCost += gunFactoryCost/10;
@@ -65,7 +71,13 @@ function upgradeBitcoin () {
   
   
   function upgradeBombFactory () {
-    if (balance >= bombFactoryCost) {
+    if ((buyActive == "off") && !(bombFactories == 0)){
+      bombFactoryValues = sell(bombFactories, bombFactoryCost, bombFactoryProfit, bombFactoryIncrease);
+      bombFactories = bombFactoryValues[0];
+      bombFactoryCost = bombFactoryValues[1];
+      bombFactoryProfit = bombFactoryValues[2];
+    }
+    if (balance >= bombFactoryCost && buyActive == "on") {
       balance = balance - bombFactoryCost;
       bombFactories += 1;
       bombFactoryCost += bitCoinUpgradeCost/10;
@@ -76,7 +88,13 @@ function upgradeBitcoin () {
   
   
   function upgradeHumanLeatherFactory () {
-    if (balance >= humanLeatherFactoryCost) {
+    if ((buyActive == "off") && !(humanLeatherFactories == 0)){
+      humanLeatherFactoryValues = sell(humanLeatherFactories, humanLeatherFactoryCost, humanLeatherFactoryProfit, humanLeatherFactoryIncrease);
+      humanLeatherFactories = humanLeatherFactoryValues[0];
+      humanLeatherFactoryCost = humanLeatherFactoryValues[1];
+      humanLeatherFactoryProfit = humanLeatherFactoryValues[2];
+    }
+    if (balance >= humanLeatherFactoryCost && buyActive == "on") {
       balance = balance - humanLeatherFactoryCost;
       humanLeatherFactories += 1;
       humanLeatherFactoryCost += humanLeatherFactoryCost/10;
@@ -87,7 +105,13 @@ function upgradeBitcoin () {
   
   
   function upgrademarijuanaFactory () {
-    if (balance >= marijuanaFactoryCost) {
+    if ((buyActive == "off") && !(marijuanaFactories == 0)){
+      marijuanaFactoryValues = sell(marijuanaFactories, marijuanaFactoryCost, marijuanaFactoryProfit, marijuanaFactoryIncrease);
+      marijuanaFactories = marijuanaFactoryValues[0];
+      marijuanaFactoryCost = marijuanaFactoryValues[1];
+      marijuanaFactoryProfit = marijuanaFactoryValues[2];
+    }
+    if (balance >= marijuanaFactoryCost && buyActive == "on") {
       balance = balance - marijuanaFactoryCost;
       marijuanaFactories += 1;
       marijuanaFactoryCost += marijuanaFactoryCost/10;
@@ -98,7 +122,13 @@ function upgradeBitcoin () {
   
   
   function upgradeCocaineFactory () {
-    if (balance >=  cocaineFactoryCost) {
+    if ((buyActive == "off") && !(cocaineFactories == 0)){
+      cocaineFactoryValues = sell(cocaineFactories, cocaineFactoryCost, cocaineFactoryProfit, cocaineFactoryIncrease);
+      cocaineFactories = cocaineFactoryValues[0];
+      cocaineFactoryCost = cocaineFactoryValues[1];
+      cocaineFactoryProfit = cocaineFactoryValues[2];
+    }
+    if (balance >=  cocaineFactoryCost && buyActive == "on") {
       balance = balance - cocaineFactoryCost;
       cocaineFactories += 1;
       cocaineFactoryCost += cocaineFactoryCost/10;
