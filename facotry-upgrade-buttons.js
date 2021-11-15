@@ -135,7 +135,6 @@ function upgradeBitcoin () {
       cocaineFactoryProfit += cocaineFactoryIncrease;
       cocaineFactoryCost = parseInt(cocaineFactoryCost);
     }
-<<<<<<<
   }
 
   function upgradeNukeFactory () {
@@ -147,6 +146,3 @@ function upgradeBitcoin () {
       nukeFactoryCost = parseInt(nukeFactoryCost);
     }
   }
-=======
-  } 
->>>>>>>
