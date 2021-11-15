@@ -17,6 +17,21 @@ function changeBuy() {
 }
 
 
+function sell(number, cost, profit, increase) {
+  if (!(number == 0) && (buyActive == "off")){
+    balance += cost-cost/10;
+    number -= 1;
+    cost -= cost/10
+    profit += increase;
+    cost = parseInt(cost);
+    let newNumber
+    let newCost
+    let newProfit
+    let newIncrease
+  }
+}
+
+
 
 
 //Runs when you click Upgrade bitcoin
@@ -85,4 +100,4 @@ function upgradeBitcoin () {
       cocaineFactoryProfit += cocaineFactoryIncrease;
       cocaineFactoryCost = parseInt(cocaineFactoryCost);
     }
-  }
+  } 
