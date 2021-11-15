@@ -138,7 +138,13 @@ function upgradeBitcoin () {
   }
 
   function upgradeNukeFactory () {
-    if (balance >= nukeFactoryCost) {
+    if ((buyActive == "off") && !(nukeFactories == 0)){
+      nukeFactoryValues = sell(nukeFactories, nukeFactoryCost, nukeFactoryProfit, nukeFactoryIncrease);
+      nukeFactories = nukeFactoryValues[0];
+      nukeFactoryCost = nukeFactoryValues[1];
+      nukeFactoryProfit = nukeFactoryValues[2];
+    }
+    if (balance >= nukeFactoryCost && buyActive == "on") {
       balance = balance - nukeFactoryCost;
       nukeFactories += 1;
       nukeFactoryCost += nukeFactoryCost/10;
