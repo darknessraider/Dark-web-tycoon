@@ -20,7 +20,7 @@ function refreshDisplay() {
   
     document.getElementById("gunFactoryProfit").innerHTML = gunFactoryProfit;
   
-    document.getElementById("bitCoinProfit").innerHTML = bitCoinUpgradeNumber;
+    document.getElementById("bitCoinProfit").innerHTML = bitcoinProfit;
   
     document.getElementById("humanLeatherFactories").innerHTML = humanLeatherFactories;
   

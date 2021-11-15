@@ -19,29 +19,34 @@ function changeBuy() {
 
 function sell(number, cost, profit, increase) {
   if (!(number == 0) && (buyActive == "off")){
-    balance += cost-cost/10;
+    balance += parseInt(cost-cost/10);
     number -= 1;
     cost -= cost/10
-    profit += increase;
+    profit -= increase; 
     cost = parseInt(cost);
-    let newNumber
-    let newCost
-    let newProfit
-    let newIncrease
+    var newNumber = number;
+    var newCost = cost;
+    var newProfit = profit;
+    return [newNumber, newCost, newProfit];
   }
 }
 
 
 
-
 //Runs when you click Upgrade bitcoin
 function upgradeBitcoin () {
-    if (balance >= bitCoinUpgradeCost) {
-      balance = balance - bitCoinUpgradeCost;
-      bitCoinUpgradeNumber += 1;
-      bitCoinUpgradeCost += bitCoinUpgradeCost/10;
-      bitcoinProfit += bitcoinIcrease;
-      bitCoinUpgradeCost = parseInt(bitCoinUpgradeCost);
+  if ((buyActive == "off") && !(bitCoinUpgradeNumber == 0)){
+    bitcoinValues = sell(bitCoinUpgradeNumber, bitCoinUpgradeCost, bitcoinProfit, bitcoinIcrease);
+    bitCoinUpgradeNumber = bitcoinValues[0];
+    bitCoinUpgradeCost = bitcoinValues[1];
+    bitcoinProfit = bitcoinValues[2];
+  }
+  if (balance >= bitCoinUpgradeCost && buyActive == "on") {
+    balance = balance - bitCoinUpgradeCost;
+    bitCoinUpgradeNumber += 1;
+    bitCoinUpgradeCost += bitCoinUpgradeCost/10;
+    bitcoinProfit += bitcoinIcrease;
+    bitCoinUpgradeCost = parseInt(bitCoinUpgradeCost);
     
     }
   }
