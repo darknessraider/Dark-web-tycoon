@@ -10,12 +10,13 @@ GJ: coder
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <link rel="stylesheet" type="text/css" href="tooltips.css"/>
 
+<!--version 0.4.0-->
 
 <links>
 <br>
 <a>0.3.0</a><br>
 <a href="patchnotes.html" target="_blank">Patch Notes</a><br>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSdVO9gJyc-CKnNAtEVkPRuR3DOm5Yz7dTQBNd9LckQtUsFNBw/viewform?usp=sf_link" target="_blank">Complaint and Sugestion Form</a><br>
+<a href="https://app.bluecatforms.com/QoPwzqyE/complaints-and-suggestions" target="_blank">Complaint and Sugestion Form</a><br>
 <a href="https://discord.gg/Guvb8q6K" target="_blank">Discord Server<a><br>
 <a>Press Ctr-Shift-R on chromebooks to recive any updates.</a>
 </links>
@@ -33,6 +34,10 @@ GJ: coder
 </bitcoin>
 
 <factorys>
+
+  <button id="changeBuy" onclick="changeBuy();">Buy</button>
+  <button id="changeSell" onclick="changeSell();">Sell</button><br>
+
   <span id="bitCoinUpgradeNumber"></span>
 
   <span data-text="Each bitcoin upgrade gives you 1 bitcoin per click" class="tooltip">
@@ -68,6 +73,13 @@ GJ: coder
   <span data-text="Each cocaine factory gives you 1000 bitcoin persecond" class="tooltip">
   <button style="background-image: url(Images/cocaine-factory-image.jfif); background-size: cover; padding: 15px 15px; color: white;" type="button" onclick="upgradeCocaineFactory();">Buy Cocaine Factory $<span id="cocaineFactoryCost"></span></button>
   <span id="cocaineFactoryProfit"></span></span><br>
+
+  <span id="nukeFactories"></span>
+
+  <span data-text="Each nuke factory gives you 5000 bitcoin persecond" class="tooltip">
+  <button style="background-image: url(Images/nuke-factory-image.jpeg); background-size: cover; padding: 15px 15px; color: white;" type="button" onclick="upgradeNukeFactory();">Buy Nuke Factory $<span id="nukeFactoryCost"></span></button>
+  <span id="nukeFactoryProfit"></span></span><br>
+
 </factorys>
 
 <span class="save"><button onclick="save();">Save</button></span>
@@ -83,7 +95,8 @@ GJ: coder
 
 <!--comented out because it causes a dangerous glitch that I don't feel like fixing -->
 
-<script src="facotry-upgrade-buttons.js"></script>
-<script src="refresh-display.js"></script>
+
 <script src="cookie-manager.js"></script>
+<script src="refresh-display.js"></script>
 <script src="main.js"></script>
+<script src="facotry-upgrade-buttons.js"></script>

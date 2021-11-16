@@ -20,7 +20,7 @@ function refreshDisplay() {
   
     document.getElementById("gunFactoryProfit").innerHTML = gunFactoryProfit;
   
-    document.getElementById("bitCoinProfit").innerHTML = bitCoinUpgradeNumber;
+    document.getElementById("bitCoinProfit").innerHTML = bitcoinProfit;
   
     document.getElementById("humanLeatherFactories").innerHTML = humanLeatherFactories;
   
@@ -40,6 +40,12 @@ function refreshDisplay() {
   
     document.getElementById("cocaineFactoryProfit").innerHTML = cocaineFactoryProfit;
     
+    document.getElementById("nukeFactoryProfit").innerHTML = nukeFactoryProfit;
+
+    document.getElementById("nukeFactoryCost").innerHTML = nukeFactoryCost;
+
+    document.getElementById("nukeFactories").innerHTML = nukeFactories;
+
     document.getElementById("perSecondDisplay").innerHTML = totalBitCoinPerSecond
   
     setTimeout(refreshDisplay, 10);

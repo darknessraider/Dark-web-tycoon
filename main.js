@@ -5,7 +5,8 @@
 //all variables
 var balance = 0;
 var autoSave = "off";
-var bitCoinUpgradeNumber = 1;
+var buyActive = "on";
+var bitCoinUpgradeNumber = 0;
 var bitCoinUpgradeCost = 50;
 var bitcoinProfit = 1;
 var bitcoinIcrease = 1;
@@ -30,7 +31,10 @@ var cocaineFactories = 0;
 var cocaineFactoryCost = 50000;
 var cocaineFactoryProfit = 0;
 var cocaineFactoryIncrease = 1000;
-
+var nukeFactories = 0;
+var nukeFactoryCost = 150000;
+var nukeFactoryProfit = 0;
+var nukeFactoryIncrease = 5000;
 
 //Display All Numbers 
 
@@ -42,7 +46,7 @@ function bitcoinClick () {
  
 //runs every second and adds up the total profit 
 function idleBalanceIncrease () {
-  totalBitCoinPerSecond = gunFactoryProfit + bombFactoryProfit + humanLeatherFactoryProfit + marijuanaFactoryProfit + cocaineFactoryProfit;
+  totalBitCoinPerSecond = gunFactoryProfit + bombFactoryProfit + humanLeatherFactoryProfit + marijuanaFactoryProfit + cocaineFactoryProfit + nukeFactoryProfit;
   balance += totalBitCoinPerSecond
   //cool thing that loop the function every second
   setTimeout(idleBalanceIncrease, 1000);

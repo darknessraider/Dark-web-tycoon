@@ -49,6 +49,10 @@ cocaineFactories = getCookie ("cocainFactories");
 cocaineFactoryCost = getCookie ("cocaineFactoryCost");
 cocaineFactoryProfit = getCookie ("cocaineFactoryProfit");
 cocaineFactoryIncrease = getCookie ("cocaineFactoryIncrease");
+nukeFactories = getCookie ("nukeFactories")
+nukeFactoryCost = getCookie ("nukeFactoryCost")
+nukeFactoryIncrease = getCookie ("nukeFactoryIncrease")
+nukeFactoryProfit = getCookie ("nukeFactoryProfit")
 autoSave = getCookie("autoSave", true);
 }
 
@@ -79,6 +83,10 @@ setCookie("cocainFactories", cocaineFactories);
 setCookie("cocaineFactoryCost", cocaineFactoryCost);
 setCookie("cocaineFactoryProfit", cocaineFactoryProfit);
 setCookie("cocaineFactoryIncrease", cocaineFactoryIncrease);
+setCookie("nukeFactories", nukeFactories);
+setCookie("nukeFactoryCost", nukeFactoryCost)
+setCookie("nukeFactoryIncrease", nukeFactoryIncrease)
+setCookie("nukeFactoryProfit", nukeFactoryProfit)
 setCookie("autoSave", autoSave);
 
 }
