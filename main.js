@@ -35,6 +35,40 @@ var nukeFactories = 0;
 var nukeFactoryCost = 150000;
 var nukeFactoryProfit = 0;
 var nukeFactoryIncrease = 5000;
+var allVariables = [
+    balance, 
+    autoSave ,
+    buyActive ,
+    bitCoinUpgradeNumber ,
+    bitCoinUpgradeCost ,
+    bitcoinProfit ,
+    bitcoinIcrease ,
+    totalBitCoinPerSecond,
+    gunFactories,
+    gunFactoryCost,
+    gunFactoryProfit,
+    gunFactoryIncrease,
+    bombFactories,
+    bombFactoryCost,
+    bombFactoryProfit,
+    bombFactoryIncrease,
+    humanLeatherFactories,
+    humanLeatherFactoryCost,
+    humanLeatherFactoryProfit,
+    humanLeatherFactoryIncrease,
+    marijuanaFactories,
+    marijuanaFactoryCost,
+    marijuanaFactoryProfit,
+    marijuanaFactoryIncrease,
+    cocaineFactories,
+    cocaineFactoryCost,
+    cocaineFactoryProfit,
+    cocaineFactoryIncrease,
+    nukeFactories,
+    nukeFactoryCost,
+    nukeFactoryProfit,
+    nukeFactoryIncrease,
+]
 
 //Display All Numbers 
 
