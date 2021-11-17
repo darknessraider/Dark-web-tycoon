@@ -92,34 +92,19 @@ GJ: coder
 comented out because it causes a dangerous glitch that I don't feel like fixing -->
 
 
+
+
+<!--import-->
+<input class="importexport" type="file" name="inputfile" id="inputfile" onclick="importFile();">
+<br>
+      
+
+<!--export-->
+<span class="importexport"><button onclick="doDownload();">Export Data</button></span>
+
+
 <script src="facotry-upgrade-buttons.js"></script>
 <script src="refresh-display.js"></script>
 <script src="cookie-manager.js"></script>
 <script src="main.js"></script>
 <script src="importexport.js"></script>
-
-<!--import-->
-<input class="importexport" type="file" name="inputfile"
-            id="inputfile">
-<br>
-   
-<pre id="output"></pre>
-      
-<script type="text/javascript">
-      document.getElementById('inputfile')
-        .addEventListener('change', function() {
-              
-        var fr=new FileReader();
-        fr.onload=function(){
-            document.getElementById('output')
-                    .textContent=fr.result;
-        }
-              
-        fr.readAsText(this.files[0]);
-    })
-  var importText = 
-
-</script>
-
-<!--export-->
-<span class="importexport"><button onclick="doDownload();">Export Data</button></span>

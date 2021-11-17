@@ -107,3 +107,87 @@ if (autoSave == "off"){
   document.getElementById("autoSaveToggle").style.backgroundColor = "red";
 }
 
+//import
+
+var I = 0
+
+function importFile(){
+    
+  document.getElementById('inputfile')
+  .addEventListener('change', function() {
+        
+  var fr=new FileReader();
+  fr.onload=function(){
+
+    
+   importData = fr.result;
+   parsedData = importData.split(',');
+   
+
+    //really unefficient way of setting all the varibles 
+     balance = parseInt(parsedData[I])
+     ++I
+     bitCoinUpgradeNumber = parseInt(parsedData[I])
+     ++I
+     bitCoinUpgradeCost = parseInt(parsedData[I])
+     ++I
+     bitcoinProfit = parseInt(parsedData[I])
+     ++I
+     bitcoinIcrease = parseInt(parsedData[I])
+     ++I
+     totalBitCoinPerSecond = parseInt(parsedData[I])
+     ++I
+     gunFactories = parseInt(parsedData[I])
+     ++I
+     gunFactoryCost = parseInt(parsedData[I])
+     ++I
+     gunFactoryProfit = parseInt(parsedData[I])
+     ++I
+     gunFactoryIncrease = parseInt(parsedData[I])
+     ++I
+     bombFactories = parseInt(parsedData[I])
+     ++I
+     bombFactoryCost = parseInt(parsedData[I])
+     ++I
+     bombFactoryProfit = parseInt(parsedData[I])
+     ++I
+     bombFactoryIncrease = parseInt(parsedData[I])
+     ++I
+     humanLeatherFactories = parseInt(parsedData[I])
+     ++I
+     humanLeatherFactoryCost = parseInt(parsedData[I])
+     ++I
+     humanLeatherFactoryProfit = parseInt(parsedData[I])
+     ++I
+     humanLeatherFactoryIncrease = parseInt(parsedData[I])
+     ++I
+     marijuanaFactories = parseInt(parsedData[I])
+     ++I
+     marijuanaFactoryCost = parseInt(parsedData[I])
+     ++I
+     marijuanaFactoryProfit = parseInt(parsedData[I])
+     ++I
+     marijuanaFactoryIncrease = parseInt(parsedData[I])
+     ++I
+     cocaineFactories = parseInt(parsedData[I])
+     ++I
+     cocaineFactoryCost = parseInt(parsedData[I])
+     ++I
+     cocaineFactoryProfit = parseInt(parsedData[I])
+     ++I
+     cocaineFactoryIncrease = parseInt(parsedData[I])
+     ++I
+     nukeFactories = parseInt(parsedData[I])
+     ++I
+     nukeFactoryCost = parseInt(parsedData[I])
+     ++I
+     nukeFactoryProfit = parseInt(parsedData[I])
+     ++I
+     nukeFactoryIncrease = parseInt(parsedData[I])
+     I = 0
+   
+  }
+        
+  fr.readAsText(this.files[0]);
+  
+})}
