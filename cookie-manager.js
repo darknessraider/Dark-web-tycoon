@@ -7,7 +7,7 @@ function setCookie(cName, cValue) {
 }
 
 //this is also code I stole but this time to get cookies
-function getCookie(cName, noParse) {
+function getCookie(cName) {
   const name = cName + "=";
   const cDecoded = decodeURIComponent(document.cookie); //to be careful
   const cArr = cDecoded .split('; ');
@@ -15,10 +15,6 @@ function getCookie(cName, noParse) {
   cArr.forEach(val => {
       if (val.indexOf(name) === 0) res = val.substring(name.length);
   })
-  if (noParse){
-    return res;
-  }
-  return parseInt(res)
 }
 
 
@@ -53,7 +49,7 @@ nukeFactories = getCookie ("nukeFactories")
 nukeFactoryCost = getCookie ("nukeFactoryCost")
 nukeFactoryIncrease = getCookie ("nukeFactoryIncrease")
 nukeFactoryProfit = getCookie ("nukeFactoryProfit")
-autoSave = getCookie("autoSave", true);
+autoSave = getCookie("autoSave");
 }
 
 //this saves all the variables into cookies

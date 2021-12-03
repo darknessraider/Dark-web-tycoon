@@ -23,7 +23,6 @@ function sell(number, cost, profit, increase) {
     number -= 1;
     cost -= cost/10
     profit -= increase; 
-    cost = parseInt(cost);
     var newNumber = number;
     var newCost = cost;
     var newProfit = profit;
@@ -46,8 +45,6 @@ function upgradeBitcoin () {
     bitCoinUpgradeNumber += 1;
     bitCoinUpgradeCost += bitCoinUpgradeCost/10;
     bitcoinProfit += bitcoinIcrease;
-    bitCoinUpgradeCost = parseInt(bitCoinUpgradeCost);
-    
     }
   }
   
@@ -64,8 +61,7 @@ function upgradeBitcoin () {
       gunFactories += 1;
       gunFactoryCost += gunFactoryCost/10;
       gunFactoryProfit += gunFactoryIncrease;
-      gunFactoryCost = parseInt(gunFactoryCost);
-  
+   
     }
   }
   
@@ -82,7 +78,6 @@ function upgradeBitcoin () {
       bombFactories += 1;
       bombFactoryCost += bombFactoryCost/10;
       bombFactoryProfit += bombFactoryIncrease;
-      bombFactoryCost = parseInt(bombFactoryCost);
     }
   }
   
@@ -99,7 +94,6 @@ function upgradeBitcoin () {
       humanLeatherFactories += 1;
       humanLeatherFactoryCost += humanLeatherFactoryCost/10;
       humanLeatherFactoryProfit += humanLeatherFactoryIncrease;
-      humanLeatherFactoryCost = parseInt(humanLeatherFactoryCost);
     }
   }
   
@@ -116,7 +110,6 @@ function upgradeBitcoin () {
       marijuanaFactories += 1;
       marijuanaFactoryCost += marijuanaFactoryCost/10;
       marijuanaFactoryProfit += marijuanaFactoryIncrease;
-      marijuanaFactoryCost = parseInt(marijuanaFactoryCost);
     }
   }
   
@@ -133,7 +126,6 @@ function upgradeBitcoin () {
       cocaineFactories += 1;
       cocaineFactoryCost += cocaineFactoryCost/10;
       cocaineFactoryProfit += cocaineFactoryIncrease;
-      cocaineFactoryCost = parseInt(cocaineFactoryCost);
     }
   }
 
@@ -149,6 +141,5 @@ function upgradeBitcoin () {
       nukeFactories += 1;
       nukeFactoryCost += nukeFactoryCost/10;
       nukeFactoryProfit += nukeFactoryIncrease;
-      nukeFactoryCost = parseInt(nukeFactoryCost);
     }
   }
