@@ -1,52 +1,52 @@
 //this runs every milisecond and displays all the variables that should be shown
 function refreshDisplay() {
-    document.getElementById("balanceDisplay").innerHTML = balance;
+    document.getElementById("balanceDisplay").innerHTML = parseInt(balance);
   
-    document.getElementById("bitCoinUpgradeNumber").innerHTML = bitCoinUpgradeNumber;
+    document.getElementById("bitCoinUpgradeNumber").innerHTML = parseInt(bitCoinUpgradeNumber);
   
-    document.getElementById("bitCoinUpgradeCost").innerHTML = bitCoinUpgradeCost;
+    document.getElementById("bitCoinUpgradeCost").innerHTML = parseInt(bitCoinUpgradeCost);
   
-    document.getElementById("gunFactories").innerHTML = gunFactories;
+    document.getElementById("gunFactories").innerHTML = parseInt(gunFactories);
   
-    document.getElementById("gunFactoryCost").innerHTML = gunFactoryCost;
+    document.getElementById("gunFactoryCost").innerHTML = parseInt(gunFactoryCost);
   
-    document.getElementById("titlebalanceDisplay").innerHTML = balance;
+    document.getElementById("titlebalanceDisplay").innerHTML = parseInt(balance);
   
-    document.getElementById("bombFactories").innerHTML = bombFactories;
+    document.getElementById("bombFactories").innerHTML = parseInt(bombFactories);
   
-    document.getElementById("bombFactoryCost").innerHTML = bombFactoryCost;
+    document.getElementById("bombFactoryCost").innerHTML = parseInt(bombFactoryCost);
     
-    document.getElementById("bombFactoryProfit").innerHTML = bombFactoryProfit;
+    document.getElementById("bombFactoryProfit").innerHTML = parseInt(bombFactoryProfit);
   
-    document.getElementById("gunFactoryProfit").innerHTML = gunFactoryProfit;
+    document.getElementById("gunFactoryProfit").innerHTML = parseInt(gunFactoryProfit);
   
-    document.getElementById("bitCoinProfit").innerHTML = bitcoinProfit;
+    document.getElementById("bitCoinProfit").innerHTML = parseInt(bitcoinProfit);
   
-    document.getElementById("humanLeatherFactories").innerHTML = humanLeatherFactories;
+    document.getElementById("humanLeatherFactories").innerHTML = parseInt(humanLeatherFactories);
   
-    document.getElementById("humanLeatherFactoryCost").innerHTML = humanLeatherFactoryCost;
+    document.getElementById("humanLeatherFactoryCost").innerHTML = parseInt(humanLeatherFactoryCost);
   
-    document.getElementById("humanLeatherFactoryProfit").innerHTML = humanLeatherFactoryProfit;
+    document.getElementById("humanLeatherFactoryProfit").innerHTML = parseInt(humanLeatherFactoryProfit);
   
-    document.getElementById("marijuanaFactories").innerHTML = marijuanaFactories;
+    document.getElementById("marijuanaFactories").innerHTML = parseInt(marijuanaFactories);
   
-    document.getElementById("marijuanaFactoryCost").innerHTML = marijuanaFactoryCost;
+    document.getElementById("marijuanaFactoryCost").innerHTML = parseInt(marijuanaFactoryCost);
   
-    document.getElementById("marijuanaFactoryProfit").innerHTML = marijuanaFactoryProfit;
+    document.getElementById("marijuanaFactoryProfit").innerHTML = parseInt(marijuanaFactoryProfit);
   
-    document.getElementById("cocaineFactories").innerHTML = cocaineFactories;
+    document.getElementById("cocaineFactories").innerHTML = parseInt(cocaineFactories);
   
-    document.getElementById("cocaineFactoryCost").innerHTML = cocaineFactoryCost;
+    document.getElementById("cocaineFactoryCost").innerHTML = parseInt(cocaineFactoryCost);
   
-    document.getElementById("cocaineFactoryProfit").innerHTML = cocaineFactoryProfit;
+    document.getElementById("cocaineFactoryProfit").innerHTML = parseInt(cocaineFactoryProfit);
     
-    document.getElementById("nukeFactoryProfit").innerHTML = nukeFactoryProfit;
+    document.getElementById("nukeFactoryProfit").innerHTML = parseInt(nukeFactoryProfit);
 
-    document.getElementById("nukeFactoryCost").innerHTML = nukeFactoryCost;
+    document.getElementById("nukeFactoryCost").innerHTML = parseInt(nukeFactoryCost);
 
-    document.getElementById("nukeFactories").innerHTML = nukeFactories;
+    document.getElementById("nukeFactories").innerHTML = parseInt(nukeFactories);
 
-    document.getElementById("perSecondDisplay").innerHTML = totalBitCoinPerSecond
+    document.getElementById("perSecondDisplay").innerHTML = parseInt(totalBitCoinPerSecond);
   
     setTimeout(refreshDisplay, 10);
   }
