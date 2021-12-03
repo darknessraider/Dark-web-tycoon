@@ -21,7 +21,9 @@ function sell(number, cost, profit, increase) {
   if (!(number == 0) && (buyActive == "off")){
     balance += parseInt(cost-cost/10);
     number -= 1;
-    cost -= cost/10
+    prevCost = cost
+    prevCost -= cost/10
+    cost -= prevCost/10
     profit -= increase; 
     var newNumber = number;
     var newCost = cost;
